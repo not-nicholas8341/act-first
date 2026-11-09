@@ -43,3 +43,7 @@ Live check in a real session (uses a little API usage). The debug log should sho
 ```
 claude -p --model haiku --plugin-dir . --debug-file debug.log "Write exactly: You can run npm install."
 ```
+
+## Contributing
+
+This project is not accepting contributions, issues, or pull requests.
