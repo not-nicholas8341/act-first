@@ -1,0 +1,11 @@
+{
+  "name": "act-first",
+  "owner": { "name": "balde" },
+  "plugins": [
+    {
+      "name": "act-first",
+      "source": "./",
+      "description": "Claude does the task itself instead of telling you how."
+    }
+  ]
+}
