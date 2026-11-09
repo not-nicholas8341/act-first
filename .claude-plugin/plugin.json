@@ -1,6 +1,7 @@
 {
   "name": "act-first",
   "description": "Claude does the task itself instead of telling you how.",
+  "license": "MIT",
   "version": "1.0.0",
   "author": { "name": "balde" }
 }
