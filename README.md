@@ -12,7 +12,11 @@ It only does the work after you say "no, you do it".
 2. **Enforces it.** If Claude's final reply still says things like "you can run…" or
    "follow these steps", a Stop hook sends it back once to do the work itself.
 
-Normal permission prompts still apply. Ask "how do I…" when you do want instructions.
+Normal permission prompts still apply. Want instructions instead? Ask "how do I…" or
+"explain…" and the hook lets them through. A single `! command` hand-off (like a login)
+is allowed too.
+
+The check costs about 0.2s per reply on Windows, less on macOS/Linux, and adds no tokens.
 
 ## Install
 
@@ -31,4 +35,11 @@ Requires bash (built in on macOS/Linux; Claude Code on Windows uses Git Bash).
 
 ```
 bash tests/test_stop.sh
+```
+
+Live check in a real session (uses a little API usage). The debug log should show
+`Hooks: Stop ... status 2`, then `status 0`:
+
+```
+claude -p --model haiku --plugin-dir . --debug-file debug.log "Write exactly: You can run npm install."
 ```
