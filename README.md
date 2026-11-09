@@ -23,7 +23,7 @@ The check costs about 0.2s per reply on Windows, less on macOS/Linux, and adds n
 In Claude Code:
 
 ```
-/plugin marketplace add YOUR_GITHUB_USERNAME/act-first
+/plugin marketplace add not-nicholas8341/act-first
 /plugin install act-first@act-first
 ```
 

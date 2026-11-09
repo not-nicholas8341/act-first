@@ -1,7 +1,7 @@
 {
   "name": "act-first",
   "description": "Make Claude do tasks itself instead of telling you how.",
-  "owner": { "name": "balde" },
+  "owner": { "name": "not-nicholas8341" },
   "plugins": [
     {
       "name": "act-first",
